@@ -74,13 +74,13 @@ export default function Review() {
         <p className="info">{reviews[reviewIndex].text}</p>
         <div id="buttons">
           <button className="prev-btn" onClick={handleLeft}>
-            &larr;
+            previous
           </button>
           <button className="next-btn" onClick={handleRight}>
-            &rarr;
+            next
           </button>
           <button className="random-btn" onClick={randomIndex}>
-            Surprise me
+            surprise me
           </button>
         </div>
       </div>
