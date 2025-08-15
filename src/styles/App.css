@@ -1,12 +1,28 @@
 h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+  color: #27aedb;
+  text-align: center;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+button {
+  color: #27aedb;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.review {
+  border: 1px solid black;
+  width: 25%;
+  padding: 10px;
+}
+
+#buttons {
+  display: flex;
+  gap: 10px;
 }
