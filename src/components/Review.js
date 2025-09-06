@@ -37,16 +37,12 @@ const reviews = [
 
 export default function Review() {
   const [reviewIndex, setReviewIndex] = useState(0);
-  function handleRight(e) {
-    if (reviewIndex < reviews.length - 1) {
-      setReviewIndex((prev) => prev + 1);
-    }
+  function handleRight() {
+    setReviewIndex((prev) => (prev + 1) % reviews.length);
   }
 
-  function handleLeft(e) {
-    if (reviewIndex > 0) {
-      setReviewIndex((prev) => prev - 1);
-    }
+  function handleLeft() {
+    setReviewIndex((prev) => (prev === 0 ? reviews.length - 1 : prev - 1));
   }
 
   function randomIndex() {
